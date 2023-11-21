@@ -12,4 +12,17 @@ services:
       - '3370:3306'
     expose:
       - '3306'
+  mongo_db:
+    image: mongo
+    container_name: "mongo_db"
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE= movie-dev
+      - MONGO_INITDB_ROOT_USERNAME= usr-movie
+      - MONGO_INITDB_ROOT_PASSWORD= pwd-movie
+    ports:
+      - 27017:27017
+
+
+
    

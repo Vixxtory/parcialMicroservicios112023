@@ -10,9 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-/**
- * @author vaninagodoy
- */
 
 @Data
 @Entity
@@ -31,5 +28,4 @@ public class Movie implements Serializable {
     private String genre;
 
     private String urlStream;
-
 }

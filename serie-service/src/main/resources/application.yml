@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: serie-service #el microservicio se registra con este dominio en el servidor de eureka
+  cloud:
+    config:
+      import: config-server:http://localhost:8888
